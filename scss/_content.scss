@@ -1,0 +1,377 @@
+body {
+    background-image: $main_bg;
+    background-size: 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+
+    padding-top: 140px;
+    padding-bottom: 30px;
+
+    div {
+        display: flex-inline;
+    }
+}
+
+h1 {
+    display: block;
+    font-size: 7vw;
+    font-family: $titleFont;
+    padding-right: 20vw;
+    line-height: .9em;
+    color: $violet;
+    text-transform: uppercase;
+}
+
+#index h2 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    max-width: 600px;
+}
+
+#index main {
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+#index p {
+    color: grey;
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+}
+
+#index section {
+    display: flex-inline;
+}
+
+
+#contacto label {
+    display: block;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+
+#contacto input {
+    display: block;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+#contacto select {
+    display: block;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.heightbtm {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.error404 {
+    background-image: $errorimg;
+    background-size: cover;
+    align-content: center;
+}
+
+.free {
+    margin-left: 45vw;
+    margin-top: 50vh;
+}
+
+legend {
+    padding: 2px 20px 2px 20px;
+    color: white;
+    background-color: grey;
+    border-radius: 25px;
+    font-size: .8em;
+}
+
+fieldset section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    margin-top: 20px;
+}
+
+fieldset {
+    padding: 20px 40px 20px 40px;
+    border: solid 4px grey;
+    border-radius: 25px;
+    background-color: rgba(245, 174, 174, 0.726);
+    /* width: 50% */
+}
+
+#comofunciona h1 {
+    text-align: center;
+    line-height: 1;
+    margin-top: 50px;
+}
+
+#comofunciona p {
+    max-width: 500px;
+    color: grey;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#comofunciona section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#comofunciona video {
+    display: flex;
+    max-width: 500px;
+    border-style: dashed;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.comofunc--flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 100px 0px 40px 0px;
+    padding: 20px 80px 20px 80px;
+    background-color: $violet;
+}
+
+.paddingViewPort {
+    padding-right: 6vw;
+    padding-left: 6vw;
+}
+
+.comofunc__card {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.img--size {
+    max-height: 120px;
+    // background-color: white;
+
+}
+
+.alignTextCenter {
+    // display: block;
+    text-align: center;
+    margin: 0 30px 0 30px;
+    // background-color: white;
+}
+
+
+
+#nosotros p {
+    background-color: rgba(245, 174, 174, 0.917);
+    padding: 20px;
+    border-radius: 15px
+}
+
+#nosotros main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*animation*/
+
+.scale:hover {
+    transform: scale(.95);
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.scaleup:hover {
+    transform: scale(1.03);
+    transition: transform .8s;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+
+/*animation*/
+
+@mixin pl-pr($paddingL, $paddingR) {
+    padding-left: $paddingL;
+    padding-right: $paddingR;
+}
+
+#kit main {
+    @include pl-pr(6vw, 6vw);
+
+}
+
+#contacto main {
+    @include pl-pr(6vw, 6vw)
+}
+
+#nosotros main {
+    @include pl-pr(6vw, 6vw)
+}
+
+#comofunciona main {
+    background-color: $light;
+}
+
+.main__p--textAlignRight {
+    text-align: right;
+    margin-left: 20vw;
+    margin-right: 6vw;
+    width: 100px;
+}
+
+.main__acordeon--bgcolor {
+    background-color: rgba(245, 174, 174, 0.917);
+    ;
+}
+
+.form__bottom--justify {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px
+}
+
+p.main__p--margin {
+    margin-top: 25px
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 10px;
+}
+
+
+
+
+@media only screen and (min-width: 851px) {
+    div.grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 20px;
+    }
+
+    #index body {
+        background-image: url(../img/Fondo-Drinkit.png);
+        background-size: 100%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+    div.grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-gap: 20px;
+    }
+
+    #comofunciona section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        background-size: 200%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-gap: 20px;
+    }
+
+    body {
+        background-size: 230%;
+        background-position: right top;
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+
+    p {
+        font-size: .8em;
+        background-color: rgba(245, 174, 174, 0.917);
+        padding: 20px;
+        border-radius: 15px
+    }
+
+    #comofunciona section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #comofunciona main div {
+        display: block;
+        justify-content: center;
+    }
+
+    #comofunciona p {
+        display: flex;
+    }
+
+    .main__style {
+
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .main__p--textAlignRight {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 11vw;
+        padding-right: 0vw;
+        line-height: 1em;
+        color: rgb(107, 199, 189);
+        text-transform: uppercase;
+    }
+
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+div a img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#kit main section {
+    margin-bottom: 35px
+}
