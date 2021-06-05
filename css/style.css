@@ -60,15 +60,15 @@ main {
 
 h1 {
   display: block;
-  font-size: 7vw;
+  font-size: 5em;
   font-family: "Abril Fatface", cursive;
-  padding-right: 20vw;
+  padding-right: 40vw;
   line-height: .9em;
   color: #40255a;
   text-transform: uppercase; }
 
 #index h2 {
-  font-size: 2vw;
+  font-size: 2em;
   text-transform: uppercase;
   max-width: 600px; }
 
@@ -248,7 +248,7 @@ p.main__p--margin {
   grid-template-rows: repeat(5, auto);
   grid-gap: 10px; }
 
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 1100px) {
   div.grid-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
@@ -260,7 +260,7 @@ p.main__p--margin {
     background-repeat: no-repeat;
     background-attachment: fixed; } }
 
-@media only screen and (min-width: 600px) and (max-width: 950px) {
+@media only screen and (min-width: 600px) and (max-width: 1099px) {
   div.grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -308,13 +308,14 @@ p.main__p--margin {
     margin-left: 0;
     margin-right: 0; }
   h1 {
-    font-size: 11vw;
+    font-size: 10vw;
     padding-right: 0vw;
     line-height: 1em;
     color: #6bc7bd;
     text-transform: uppercase; }
-  h2 {
-    font-size: 1rem; } }
+  #index h2 {
+    font-size: 1.5em;
+    text-transform: uppercase; } }
 
 div a img {
   width: 100%;
