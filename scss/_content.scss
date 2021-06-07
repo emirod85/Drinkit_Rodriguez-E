@@ -1,5 +1,6 @@
 body {
-    background-image: $main_bg;
+    // background-image: $main_bg;
+    background: $newBg;
     background-size: 100%;
     background-position: right top;
     background-repeat: no-repeat;
@@ -271,7 +272,7 @@ p.main__p--margin {
     }
 
     #index body {
-        background-image: url(../img/Fondo-Drinkit.png);
+        background-image: url(../img/Fondo-Drinkit.png);        
         background-size: 100%;
         background-position: right top;
         background-repeat: no-repeat;

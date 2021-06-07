@@ -14,7 +14,7 @@ header {
     flex-grow: 1; }
 
 nav {
-  background: linear-gradient(90deg, #c83861 0%, #ff9fbe 59%, rgba(0, 212, 255, 0) 92%);
+  background: linear-gradient(75deg, #13021d 62%, rgba(19, 2, 29, 0) 99%);
   min-height: 90px; }
   nav img {
     height: 30px; }
@@ -46,7 +46,7 @@ nav {
   transition: .2s; }
 
 body {
-  background-image: url(../img/Fondo-Drinkit.png);
+  background: linear-gradient(32deg, #f61eff 0%, #6960ff 53%, #00ffe4 100%);
   background-size: 100%;
   background-position: right top;
   background-repeat: no-repeat;
