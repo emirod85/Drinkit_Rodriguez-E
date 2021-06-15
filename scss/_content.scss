@@ -1,12 +1,20 @@
 body {
+    background: $main_bg, $gradient_bg;
+    // background-color: $newBg;
     // background-image: $main_bg;
-    background: $newBg;
     background-size: 100%;
     background-position: right top;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+.bg_hole {
+    background-color: $newBg;
+    background-image: $main_bg;
+    background-size: 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 main {
 
     padding-top: 140px;
@@ -167,15 +175,12 @@ fieldset {
 
 .img--size {
     max-height: 120px;
-    // background-color: white;
 
 }
 
 .alignTextCenter {
-    // display: block;
     text-align: center;
     margin: 0 30px 0 30px;
-    // background-color: white;
 }
 
 

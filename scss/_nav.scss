@@ -1,7 +1,7 @@
 nav {
     background: $navColor;
     min-height: 90px;
-    // box-sizing: border-box;
+    border-bottom: solid 2px rgb(96, 253, 34);
 
     img {
         height: 30px;
@@ -19,7 +19,6 @@ nav {
     right: 0;
     top: 0;
     width: 100%;
-    // box-sizing: border-box;
     transition: top .6s;
     overflow: hidden;
 }
