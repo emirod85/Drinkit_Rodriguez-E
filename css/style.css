@@ -679,13 +679,6 @@ form {
     align-items: center; } }
 
 @media only screen and (min-width: 320px) and (max-width: 619px) {
-  .kitBoxSubt {
-    width: 400px;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    align-items: center;
-    margin-top: 20px; }
   .nav__buttom--hover {
     margin-left: 35px; }
   .infoIndex {
