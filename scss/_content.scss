@@ -73,7 +73,7 @@ h1 {
     box-shadow: -3px 3px 9px 0px rgba(255, 255, 255, 0.226);
 }
 
-.shadowFooter{
+.shadowFooter {
     box-shadow: 5px -5px 15px 0px rgba(104, 104, 104, 0.315);
 }
 
@@ -136,6 +136,7 @@ h1 {
     margin-top: 100px;
     right: 0;
     z-index: -1;
+    width: 50%;
 }
 
 .howItWorks {
@@ -143,7 +144,7 @@ h1 {
     font-weight: 900;
     display: block;
     position: absolute;
-    right: 200px;
+    right: 100px;
     margin-top: 60px;
     color: black;
 }
@@ -173,7 +174,7 @@ h1 {
 .howSection {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 257px;
     padding: 40px;
     border-radius: 15px;
     height: 450px;
@@ -183,19 +184,17 @@ h1 {
 }
 
 .howSection1 {
-    margin-top: 80px;
+    margin-top: 100px;
 
 }
 
 .howSection2 {
-    margin-top: 120px;
-}
-
-.howSection3 {
     margin-top: 160px;
 }
 
-.howImg {}
+.howSection3 {
+    margin-top: 200px;
+}
 
 .howTitle {
     font-size: 2em;
@@ -240,7 +239,19 @@ h1 {
     padding: 40px;
     justify-content: space-around;
 }
-.btnTools{
+
+.priceStyle {
+    color: $primario;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.boxTitle {
+    font-weight: 900;
+
+}
+
+.btnTools {
     text-align: center;
 }
 
@@ -257,10 +268,10 @@ h1 {
 }
 
 .kitStyle {
-padding-top: 80px;
-display: flex;
-flex-direction: column;
-align-items: center;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -333,9 +344,12 @@ align-items: center;
 .kbox {
     display: flex;
     flex-direction: row;
+    // flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 
 }
 
@@ -348,9 +362,9 @@ align-items: center;
     color: black;
     width: 330px;
     justify-content: space-between;
-}
-.kitBtn {
-
+    border-radius: 15px;
+    box-shadow: -3px 3px 10px 0px rgba(156, 156, 156, 0.198);
+    margin-bottom: 60px;
 }
 
 .kitBoxTxt {
@@ -366,31 +380,30 @@ align-items: center;
     margin-left: 78px;
 }
 
-.kitBoxImg {
-    width: 20%;
+.kitBoxImg1 {
+    width: 90%;
+    margin-bottom: 60px;
 
 }
 
 .justifyTxt {
-    text-align: justify;
-    display: inline-block;
+    text-align: center;
+
 }
 
 .aboutus {
     display: flex;
+    flex-flow: row wrap;
     margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-
     padding-bottom: 50px;
-   
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: center;
+
 
 }
 
-.aboutCont {
-    display: flex;
-    flex-grow: 1;
-}
+
 
 .aboutTitle {
     font-size: 3em;
@@ -423,13 +436,18 @@ align-items: center;
 }
 
 .aboutWeAre {
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .aboutWeAreTx {
     width: 20vw;
+    min-width: 200px;
     font-size: 1rem;
 
+}
+
+.imgClass {
+    width: 32vw;
 }
 
 .aboutInvite {
@@ -437,8 +455,9 @@ align-items: center;
     flex-direction: column;
     font-size: 1rem;
     width: 300px;
-    padding-top: 330px;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 25px;
 }
 
 #contact main {
@@ -471,11 +490,13 @@ align-items: center;
 
 .contactSect {
     display: flex;
-    -ms-flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 #contact input,
+
 textarea {
     display: block;
     border: solid black 2px;
@@ -616,35 +637,6 @@ form {
     margin-top: 20px;
 }
 
-
-
-#comofunciona h1 {
-    text-align: center;
-    line-height: 1;
-    margin-top: 50px;
-}
-
-#comofunciona p {
-    max-width: 500px;
-    color: grey;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-#comofunciona section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#comofunciona video {
-    display: flex;
-    max-width: 500px;
-    border-style: dashed;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
 .flex-center {
     display: flex;
     justify-content: center;
@@ -659,19 +651,6 @@ form {
 
 }
 
-.paddingViewPort {
-    padding-right: 6vw;
-    padding-left: 6vw;
-}
-
-.comofunc__card {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-}
-
 .img--size {
     max-height: 120px;
 
@@ -681,21 +660,6 @@ form {
     text-align: center;
     margin: 0 30px 0 30px;
 }
-
-
-
-#nosotros p {
-    background-color: rgba(245, 174, 174, 0.917);
-    padding: 20px;
-    border-radius: 15px
-}
-
-#nosotros main {
-    display: flex;
-    flex-direction: column;
-}
-
-/*animation*/
 
 .scale:hover {
     transform: scale(.95);
@@ -711,118 +675,337 @@ form {
 
 }
 
-p.main__p--margin {
-    margin-top: 25px
-}
+@media only screen and (min-width: 620px) and (max-width: 980px) {
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-gap: 10px;
-}
+    h1 {
+        display: block;
+        font-size: 4em;
+        font-weight: 800;
+        font-family: $titleFont;
+        max-width: 350px;
+        line-height: .9em;
+        color: rgb(0, 0, 0);
+    }
+
+    #index h2 {
+        font-size: 1em;
+        font-weight: 400;
+        max-width: 350px;
+        margin: 40px 0 40px 0;
+        color: black;
+
+    }
+
+    .kitBoxTitle {
+        font-weight: 900;
+        font-size: 1.8em;
+        margin-bottom: 50px;
+        color: black;
+
+    }
+
+    .imgHand {
+        position: absolute;
+        top: 50px;
+        // margin-top: 200px;    
+        right: 0;
+        // left: 100px;
+        z-index: -1;
+        width: 45%;
+    }
+
+    .btnKit {
+        margin-left: 0px;
+    }
+
+    .kitBoxTxt {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .marginBox {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .marginL {
+        margin-left: 5vw;
+
+    }
+
+    .marginR {
+        margin-right: 5vw;
+    }
+
+    .kitBoxImg {
+        display: flex;
+        width: 40vw;
+
+    }
+
+    .howItWorks {
+        font-size: 3em;
+        font-weight: 900;
+        display: block;
+        position: absolute;
+        right: 200px;
+        margin-top: -30px;
+    }
 
 
+    .howSection1 {
+        margin-top: 60px;
+    }
 
+    .howSection2 {
+        margin-top: 60px;
+    }
 
-// @media only screen and (min-width: 1100px) {
-//     div.grid-container {
-//         grid-template-columns: repeat(3, 1fr);
-//         grid-template-rows: repeat(5, auto);
-//         grid-gap: 20px;
-//     }
+    .howSection3 {
+        margin-top: 60px;
+    }
 
-//     #index body {
-//         background-image: url(../img/Fondo-Drinkit.png);
-//         background-size: 100%;
-//         background-position: right top;
-//         background-repeat: no-repeat;
-//         background-attachment: fixed;
-//     }
-// }
+    .kitBoxImg1 {
+        width: 90%;
 
+    }
 
-@media only screen and (min-width: 620px) and (max-width: 937px) {
-.imgHand {
-    // position: absolute;
-    // float: right;
-    // // top: 0;
-    // // margin-top: 100px;
-    // // right: 0;
-    // z-index: -1;
-    // width: 200px;
-}
-.howItWorks {
-    font-size: 3em;
-    font-weight: 900;
-    display: block;
-    position: absolute;
-    right: 200px;
-    margin-top: 0px;}
+    .sectionKit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-.howSection3 {
-    margin-top: 40px;
-
-}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 619px) {
-    .howSection1 {
-        margin-top: 140px;
+    .kitBoxSubt {
+        width: 400px;
+        font-weight: 300;
+        color: black;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
     }
- 
+
+    .nav__buttom--hover {
+        margin-left: 35px;
+
+    }
+
+    .infoIndex {
+        margin-bottom: 40px;
+    }
+
+    .kbox {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .howItWorks {
+        font-size: 3em;
+        font-weight: 900;
+        display: block;
+        position: absolute;
+        right: 200px;
+        margin-top: -60px;
+    }
+
+
+    .howSection1 {
+        margin-top: 40px;
+    }
+
     .howSection2 {
         margin-top: 40px;
     }
+
     .howSection3 {
         margin-top: 40px;
     }
+
+    h1 {
+        display: block;
+        font-size: 4em;
+        font-weight: 800;
+        font-family: $titleFont;
+        max-width: 350px;
+        line-height: .9em;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 280px;
+
     }
 
-//     body {
-//         background-size: 230%;
-//         background-position: right top;
-//         background-repeat: repeat;
-//         background-attachment: fixed;
-//     }
+    #index h2 {
+        font-size: 1em;
+        font-weight: 400;
+        max-width: 300px;
+        margin: 40px 0 40px 0;
+        color: black;
+        text-align: center;
 
-//     #comofunciona section {
-//         display: flex;
-//         flex-direction: column;
-//     }
+    }
 
-//     #comofunciona main div {
-//         display: block;
-//         justify-content: center;
-//     }
+    .main__style {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-left: 0;
+    }
 
-//     #comofunciona p {
-//         display: flex;
-//     }
+    .btnMb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
-//     .main__style {
+    .kitBoxTitle {
+        font-weight: 900;
+        font-size: 1.8em;
+        margin-bottom: 50px;
+        color: black;
 
-//         flex-direction: row;
-//         justify-content: center;
-//         text-align: center;
+    }
 
-//     }
+    .imgHand {
+        position: absolute;
+        top: 200px;
+        // margin-top: 200px;    
+        right: 0;
+        // left: 100px;
+        z-index: -1;
+        width: 65%;
+    }
+
+    .btnKit {
+        margin-left: 0px;
+    }
+
+    .kitBoxTxt {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        width: 80%;
+        margin-left: 0px;
+        ;
+    }
+
+    .marginBox {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .marginL {
+        margin-left: 5vw;
+
+    }
+
+    .marginR {
+        margin-right: 5vw;
+    }
+
+    .kitBoxImg {
+        display: flex;
+        width: 35vw;
+
+    }
 
 
-//     h1 {
-//         font-size: 10vw;
-//         padding-right: 0vw;
-//         line-height: 1em;
-//         color: rgb(107, 199, 189);
-//         text-transform: uppercase;
-//     }
+    .aboutH3 {
+        display: block;
+        color: black;
+        font-weight: 900;
+        text-align: center;
+
+    }
+
+    .aboutWeAre {
+        flex-direction: column;
+    }
+
+    .aboutWeAreTx {
+        // width: 20vw;
+        display: flex;
+        min-width: 400px;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        align-items: center;
+
+    }
+
+    .imgClass {
+        width: 50vw;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .aboutInvite {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        width: 300px;
+        // justify-content: flex-end;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    .aboutus {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        justify-content: center;
+        align-items: center;
 
 
-//     #index h2 {
-//         font-size: 1.5em;
-//         text-transform: uppercase;
+    }
 
-//     }
-// }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    .imgDirection {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-left: solid white;
+
+        img {
+            width: 20px;
+            margin-left: 30px;
+
+        }
+    }
+
+    .sectionKit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

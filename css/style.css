@@ -46,7 +46,7 @@ nav {
 .nav__buttom--hover {
   position: relative;
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 35px;
   padding-left: 0;
   padding-right: 0; }
 
@@ -192,14 +192,15 @@ h1 {
   top: 0;
   margin-top: 100px;
   right: 0;
-  z-index: -1; }
+  z-index: -1;
+  width: 50%; }
 
 .howItWorks {
   font-size: 3em;
   font-weight: 900;
   display: block;
   position: absolute;
-  right: 200px;
+  right: 100px;
   margin-top: 60px;
   color: black; }
 
@@ -223,7 +224,7 @@ h1 {
 .howSection {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 257px;
   padding: 40px;
   border-radius: 15px;
   height: 450px;
@@ -231,13 +232,13 @@ h1 {
   box-shadow: -3px 3px 8px 0px rgba(128, 128, 128, 0.13); }
 
 .howSection1 {
-  margin-top: 80px; }
+  margin-top: 100px; }
 
 .howSection2 {
-  margin-top: 120px; }
+  margin-top: 160px; }
 
 .howSection3 {
-  margin-top: 160px; }
+  margin-top: 200px; }
 
 .howTitle {
   font-size: 2em;
@@ -273,6 +274,14 @@ h1 {
 .deluxe_kit_container {
   padding: 40px;
   justify-content: space-around; }
+
+.priceStyle {
+  color: #54F5FF;
+  font-weight: 600;
+  font-size: 1.3em; }
+
+.boxTitle {
+  font-weight: 900; }
 
 .btnTools {
   text-align: center; }
@@ -350,7 +359,9 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 80px; }
+  margin-top: 80px;
+  padding-left: 10vw;
+  padding-right: 10vw; }
 
 .kitSpecif {
   display: flex;
@@ -360,7 +371,10 @@ h1 {
   align-content: center;
   color: black;
   width: 330px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: -3px 3px 10px 0px rgba(156, 156, 156, 0.198);
+  margin-bottom: 60px; }
 
 .kitBoxTxt {
   width: 400px;
@@ -372,23 +386,21 @@ h1 {
 .btnKit {
   margin-left: 78px; }
 
-.kitBoxImg {
-  width: 20%; }
+.kitBoxImg1 {
+  width: 90%;
+  margin-bottom: 60px; }
 
 .justifyTxt {
-  text-align: justify;
-  display: inline-block; }
+  text-align: center; }
 
 .aboutus {
   display: flex;
+  flex-flow: row wrap;
   margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 50px; }
-
-.aboutCont {
-  display: flex;
-  flex-grow: 1; }
+  padding-bottom: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  justify-content: center; }
 
 .aboutTitle {
   font-size: 3em;
@@ -416,19 +428,24 @@ h1 {
   font-weight: 900; }
 
 .aboutWeAre {
-  flex-direction: column; }
+  flex-direction: row; }
 
 .aboutWeAreTx {
   width: 20vw;
+  min-width: 200px;
   font-size: 1rem; }
+
+.imgClass {
+  width: 32vw; }
 
 .aboutInvite {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   width: 300px;
-  padding-top: 330px;
-  align-items: flex-end; }
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 25px; }
 
 #contact main {
   padding-top: 110px;
@@ -454,7 +471,8 @@ h1 {
 
 .contactSect {
   display: flex;
-  -ms-flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around; }
 
 #contact input,
@@ -563,29 +581,6 @@ form {
   display: flex;
   margin-top: 20px; }
 
-#comofunciona h1 {
-  text-align: center;
-  line-height: 1;
-  margin-top: 50px; }
-
-#comofunciona p {
-  max-width: 500px;
-  color: grey;
-  margin-top: 50px;
-  margin-bottom: 30px; }
-
-#comofunciona section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-#comofunciona video {
-  display: flex;
-  max-width: 500px;
-  border-style: dashed;
-  margin-top: 20px;
-  margin-bottom: 5px; }
-
 .flex-center {
   display: flex;
   justify-content: center; }
@@ -597,17 +592,6 @@ form {
   margin: 100px 0px 40px 0px;
   padding: 20px 80px 20px 80px; }
 
-.paddingViewPort {
-  padding-right: 6vw;
-  padding-left: 6vw; }
-
-.comofunc__card {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px; }
-
 .img--size {
   max-height: 120px; }
 
@@ -615,16 +599,6 @@ form {
   text-align: center;
   margin: 0 30px 0 30px; }
 
-#nosotros p {
-  background-color: rgba(245, 174, 174, 0.917);
-  padding: 20px;
-  border-radius: 15px; }
-
-#nosotros main {
-  display: flex;
-  flex-direction: column; }
-
-/*animation*/
 .scale:hover {
   transform: scale(0.95);
   transition: transform .5s;
@@ -636,33 +610,220 @@ form {
   cursor: pointer;
   overflow: hidden; }
 
-p.main__p--margin {
-  margin-top: 25px; }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(1fr);
-  grid-template-rows: repeat(5, auto);
-  grid-gap: 10px; }
-
-@media only screen and (min-width: 620px) and (max-width: 937px) {
+@media only screen and (min-width: 620px) and (max-width: 980px) {
+  h1 {
+    display: block;
+    font-size: 4em;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    max-width: 350px;
+    line-height: .9em;
+    color: black; }
+  #index h2 {
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 350px;
+    margin: 40px 0 40px 0;
+    color: black; }
+  .kitBoxTitle {
+    font-weight: 900;
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    color: black; }
+  .imgHand {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: -1;
+    width: 45%; }
+  .btnKit {
+    margin-left: 0px; }
+  .kitBoxTxt {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px; }
+  .marginBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center; }
+  .marginL {
+    margin-left: 5vw; }
+  .marginR {
+    margin-right: 5vw; }
+  .kitBoxImg {
+    display: flex;
+    width: 40vw; }
   .howItWorks {
     font-size: 3em;
     font-weight: 900;
     display: block;
     position: absolute;
     right: 200px;
-    margin-top: 0px; }
+    margin-top: -30px; }
+  .howSection1 {
+    margin-top: 60px; }
+  .howSection2 {
+    margin-top: 60px; }
   .howSection3 {
-    margin-top: 40px; } }
+    margin-top: 60px; }
+  .kitBoxImg1 {
+    width: 90%; }
+  .sectionKit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media only screen and (min-width: 320px) and (max-width: 619px) {
+  .kitBoxSubt {
+    width: 400px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px; }
+  .nav__buttom--hover {
+    margin-left: 35px; }
+  .infoIndex {
+    margin-bottom: 40px; }
+  .kbox {
+    padding-left: 100px;
+    padding-right: 100px; }
+  .howItWorks {
+    font-size: 3em;
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    right: 200px;
+    margin-top: -60px; }
   .howSection1 {
-    margin-top: 140px; }
+    margin-top: 40px; }
   .howSection2 {
     margin-top: 40px; }
   .howSection3 {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  h1 {
+    display: block;
+    font-size: 4em;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    max-width: 350px;
+    line-height: .9em;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 280px; }
+  #index h2 {
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 300px;
+    margin: 40px 0 40px 0;
+    color: black;
+    text-align: center; }
+  .main__style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 0; }
+  .btnMb {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+  .kitBoxTitle {
+    font-weight: 900;
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    color: black; }
+  .imgHand {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    z-index: -1;
+    width: 65%; }
+  .btnKit {
+    margin-left: 0px; }
+  .kitBoxTxt {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 0px; }
+  .marginBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center; }
+  .marginL {
+    margin-left: 5vw; }
+  .marginR {
+    margin-right: 5vw; }
+  .kitBoxImg {
+    display: flex;
+    width: 35vw; }
+  .aboutH3 {
+    display: block;
+    color: black;
+    font-weight: 900;
+    text-align: center; }
+  .aboutWeAre {
+    flex-direction: column; }
+  .aboutWeAreTx {
+    display: flex;
+    min-width: 400px;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    align-items: center; }
+  .imgClass {
+    width: 50vw;
+    justify-content: center;
+    margin-top: 40px; }
+  .aboutInvite {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 300px;
+    align-items: center;
+    padding-top: 25px; }
+  .aboutus {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: center;
+    align-items: center; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .imgDirection {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: solid white; }
+    .imgDirection img {
+      width: 20px;
+      margin-left: 30px; }
+  .sectionKit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 .footer--width {
   background-color: black;
