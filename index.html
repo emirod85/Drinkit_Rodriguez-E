@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -17,75 +17,232 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="description" content="Prepara los mas ricos cocktails con nuestro Kit">
-	<meta name="keywords" content="drink, preparacion de cocktails, bartender, , recetas cocktails, aprender a preparar cocktails, cocktail, barman, trago">
+	<meta name="keywords"
+		content="drink, preparacion de cocktails, bartender, , recetas cocktails, aprender a preparar cocktails, cocktail, barman, trago">
 	<title>DrinkIt - Con nuestros kits, aprende a hacer los cocktails que mas te gustan en tu casa</title>
 </head>
 
 <body id="index">
-	<header class="fixed-top nav-area">
+	<header class="fixed-top nav-area filterBlur ">
 
-		<nav class="navbar navbar-expand-md navbar-light nav--height">
-			<a class="navbar__logo--ml navbar-brand" href="index.html"><img src="img/LogoDrinkit-Final.png"
-					alt="Logo de Drinkit"></a>
+		<nav class="navbar navbar-expand-md navbar-light container1">
 
-			<button class="mt-2 mr-5 navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-				aria-label="Toggle navigation">
+			<a class="navbar__logo--ml navbar-brand" href="index.html"><img src="img/Logo_Drinkit.svg"
+					alt="Logo Drinkit"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
+
+
+
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="mt-2 mb-1 ml-3 active btn btn-sm nav__buttom--hoverwhite" href="index.html">Home <span
+					<a class="active btn btnnav btn-sm nav__buttom--hover marginNav" href="#index">Home <span
 							class="sr-only">(current)</span></a>
-					<a class="mt-2 mb-1 ml-3 btn btn-sm nav__buttom--hoverwhite" href="como_funciona.html">¿Cómo
-						Funciona?</a>
-					<a class="mt-2 mb-1 ml-3 btn btn-sm nav__buttom--hoverwhite" href="kit.html">Kits</a>
-					<a class="mt-2 mb-1 ml-3 btn btn-sm nav__buttom--hoverwhite" href="nosotros.html">Nosotros</a>
-					<a class="mt-2 mb-1 ml-3 btn btn-sm nav__buttom--hoverwhite" href="contacto.html">Contacto</a>
+					<a class="btn btnnav btn-sm nav__buttom--hover" href="#how">How It Works?</a>
+					<a class="btn btnnav btn-sm nav__buttom--hover" href="#kit">Kit box</a>
+					<a class="btn btnnav btn-sm nav__buttom--hover" href="#about">About Us</a>
+					<a class="btn btnnav btn-sm nav__buttom--hover" href="contact.html">Contact</a>
 				</div>
 			</div>
-		</nav>
-	</header>
-	<main>
-		<div class="main__style db">
-			<div>
-				<h1 class="wow fadeInDownBig" data-wow-delay=".05s">VIVI LA EXPERIENCIA DRINKIT!</h1>
-				<h2>Obtén tu DrinKIT y <strong>aprende a preparar los Cocktails mas sabrosos</strong> y compartilos con
-					tus amigos!</h2>
-				<a class="btn btn-info wow bounceIn" data-wow-delay="1.5s" href="kit.html" role="button">Comenzar!</a>
-			</div>
-			<section>
-				<p>Elige tu DrinKit, recíbelo en tu casa y prepárate para vivir la experiencia mas divertida de <strong> aprender
-					a preparar los cocktails más exóticos de forma profesional</strong> y disfrutarlos con tus amigos.</p><br>
-				<p class="main__p--textAlignRight">Vos poné tu casa y nosotros te enviamos los ingredientes y todo lo
-					necesario para que te sientas como si estuvieras en un bar de primer nivel. Y tu serás el Barman!
-				</p>
 
+
+		</nav>
+
+	</header>
+
+	<main>
+		<div class="main__style db pl">
+			<div>
+				<h1 class="wow fadeInDownBig" data-wow-delay=".03s">Discover the <span class="titleBorderStyle">Drinkit
+						experience</span>!</h1>
+				<h2 class="wow bounceIn" data-wow-delay=".9s">You provide your home and we send you the ingredients and
+					everything you need to make you feel as if you were in a first class bar. <span
+						class="weight2"><strong> And you will be the bartender!</strong></span></h2>
+				<a class="btn btn-outline-dark wow bounceIn btnStyle shadowStyle" data-wow-delay="1.2s" href="kit.html"
+					role="button">Let´s start!</a>
+			</div>
+			<section class="infoIndex">
+				<a href=""><img class="logo wow bounceIn" data-wow-delay="1.5s" src="img/fb_svg.svg"
+						alt="logo facebook"></a>
+				<a href=""><img class="logo wow bounceIn" data-wow-delay="1.5s" src="img/igm_svg.svg"
+						alt="logo instagram"></a>
+				<p class="info_txt wow bounceIn" data-wow-delay="1.5s">You can find us in social media and tag us in
+					your creations!</p>
 			</section>
 		</div>
-	</main>
-	<footer class="footer--bgcolor footer--width">
-		<ul>
-			<li>
-				<a href="tel:+541148568498">
-					<img
-						src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDU4IDU4IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJQYWdlLTEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgaWQ9IjAwMy0tLUNhbGwiIGZpbGw9InJnYigwLDAsMCkiIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIj48cGF0aCBpZD0iU2hhcGUiIGQ9Im0yNS4wMTcgMzMuOTgzYy01LjUzNi01LjUzNi02Ljc4Ni0xMS4wNzItNy4wNjgtMTMuMjktLjA3ODc5OTQtLjYxMzI4MjguMTMyMjQ4MS0xLjIyODMxNDQuNTcxLTEuNjY0bDQuNDgtNC40NzhjLjY1OTAxMzYtLjY1ODYwNjYuNzc1OTYyOS0xLjY4NTAyNC4yODItMi40NzVsLTcuMTMzLTExLjA3NmMtLjU0NjQ4MzctLjg3NDc1MTM0LTEuNjY4NTYyNC0xLjE5MDQ1Nzc3LTIuNTkxLS43MjlsLTExLjQ1MSA1LjM5M2MtLjc0NTk0MTE3LjM2NzMwOC0xLjE4NDY5MzM4IDEuMTU5ODU0MDUtMS4xIDEuOTg3LjYgNS43IDMuMDg1IDE5LjcxMiAxNi44NTUgMzMuNDgzczI3Ljc4IDE2LjI1NSAzMy40ODMgMTYuODU1Yy44MjcxNDYuMDg0NjkzNCAxLjYxOTY5Mi0uMzU0MDU4OCAxLjk4Ny0xLjFsNS4zOTMtMTEuNDUxYy40NTk3MzA3LS45MjA0NDc0LjE0NjExNC0yLjAzOTUxODQtLjcyNS0yLjU4N2wtMTEuMDc2LTcuMTMxYy0uNzg5NTI1OS0uNDk0NDc4OS0xLjgxNTg5NjctLjM3ODM2NDItMi40NzUuMjhsLTQuNDc4IDQuNDhjLS40MzU2ODU2LjQzODc1MTktMS4wNTA3MTcyLjY0OTc5OTQtMS42NjQuNTcxLTIuMjE4LS4yODItNy43NTQtMS41MzItMTMuMjktNy4wNjh6Ii8+PHBhdGggaWQ9IlNoYXBlIiBkPSJtNDcgMzFjLTEuMTA0NTY5NSAwLTItLjg5NTQzMDUtMi0yLS4wMDkzNjg1LTguMjgwMzg3Ni02LjcxOTYxMjQtMTQuOTkwNjMxNS0xNS0xNS0xLjEwNDU2OTUgMC0yLS44OTU0MzA1LTItMnMuODk1NDMwNS0yIDItMmMxMC40ODg2MTI2LjAxMTU3MzUgMTguOTg4NDI2NSA4LjUxMTM4NzQgMTkgMTkgMCAxLjEwNDU2OTUtLjg5NTQzMDUgMi0yIDJ6Ii8+PHBhdGggaWQ9IlNoYXBlIiBkPSJtNTcgMzFjLTEuMTA0NTY5NSAwLTItLjg5NTQzMDUtMi0yLS4wMTU0MzA5LTEzLjgwMDcyMi0xMS4xOTkyNzgtMjQuOTg0NTY5MS0yNS0yNS0xLjEwNDU2OTUgMC0yLS44OTU0MzA1LTItMnMuODk1NDMwNS0yIDItMmMxNi4wMDg5NDcuMDE3NjM1ODcgMjguOTgyMzY0MSAxMi45OTEwNTMgMjkgMjkgMCAuNTMwNDMzLS4yMTA3MTM3IDEuMDM5MTQwOC0uNTg1Nzg2NCAxLjQxNDIxMzYtLjM3NTA3MjguMzc1MDcyNy0uODgzNzgwNi41ODU3ODY0LTEuNDE0MjEzNi41ODU3ODY0eiIvPjwvZz48L2c+PC9zdmc+" />
-					Llamanos
-				</a>
-			</li>
-			<li><a href="mailto:tuemail@gmail.com">Mail</a> Escribinos</li>
-			<li>
-				<a href="https://www.facebook.com/" target="_blank">
-					<img
-						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTY3LjY1NyAxNjcuNjU3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNjcuNjU3IDE2Ny42NTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiMwMTAwMDI7IiBkPSJNODMuODI5LDAuMzQ5QzM3LjUzMiwwLjM0OSwwLDM3Ljg4MSwwLDg0LjE3OGMwLDQxLjUyMywzMC4yMjIsNzUuOTExLDY5Ljg0OCw4Mi41N3YtNjUuMDgxSDQ5LjYyNg0KCQl2LTIzLjQyaDIwLjIyMlY2MC45NzhjMC0yMC4wMzcsMTIuMjM4LTMwLjk1NiwzMC4xMTUtMzAuOTU2YzguNTYyLDAsMTUuOTIsMC42MzgsMTguMDU2LDAuOTE5djIwLjk0NGwtMTIuMzk5LDAuMDA2DQoJCWMtOS43MiwwLTExLjU5NCw0LjYxOC0xMS41OTQsMTEuMzk3djE0Ljk0N2gyMy4xOTNsLTMuMDI1LDIzLjQySDk0LjAyNnY2NS42NTNjNDEuNDc2LTUuMDQ4LDczLjYzMS00MC4zMTIsNzMuNjMxLTgzLjE1NA0KCQlDMTY3LjY1NywzNy44ODEsMTMwLjEyNSwwLjM0OSw4My44MjksMC4zNDl6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
-					DrinKit_Facebook
-				</a>
-			</li>
-			<li>&copy DrinKit 2021</li>
-		</ul>
+		<section class="imgHand">
+			<img src="/img/hand_cocktail.png" alt="">
+		</section>
 
+		<div id="how" class="how pl pr">
+			<h3 class="howItWorks wow bounceInRight" data-wow-duration="2s"><span class="titleBorderStyle">How</span> it
+				works?</h3>
+			<section class="howSection howSection1 filterBlur wow bounceIn" data-wow-duration="1s">
+				<img src="img/Icono-hiw-01.png" alt="">
+				<h3 class="howTitle"><span class="titleBorderStyle">01.</span> Buy it</h3>
+				<p class="howText">Choose the "DrinKit" box you would most like to try from our options in Kits.</p>
+			</section>
+			<section class="howSection howSection2 filterBlur wow bounceIn" data-wow-duration="1s">
+				<img src="img/Icono-hiw-02.png" alt="">
+				<h3 class="howTitle"><span class="titleBorderStyle">02.</span> Deliver</h3>
+				<p class="howText">Receive the Drinkit box at your home and start enjoying the experience.</p>
+			</section>
+			<section class="howSection howSection3 filterBlur wow bounceIn" data-wow-duration="1s">
+				<img src="img/Icono-hiw-03.png" alt="">
+				<h3 class="howTitle"><span class="titleBorderStyle">03.</span> Try it</h3>
+				<p class="howText">Every month we renew our variety of cocktails in our boxes so you can keep tasting,
+					learning and
+					enjoying!</p>
+			</section>
+		</div>
+
+		<div class="deluxe_kit pl pr shadowStyle">
+
+			<img class="deluxe_kit_img" src="/img/deluxekit.png" alt="" width="100%">
+
+			<section class="deluxe_kit_container">
+				<h3 class="deluxeKitTitle">Tool <span class="titleBorderStyle">kit</span></h3>
+				<p class="deluxe_kit_txt">
+					Every kit has the option to add a Tool Kit that will give you all the necessary to
+					become the best bartender!
+				</p>
+				<a class="btn btn-outline-dark wow bounceIn btnStyle shadowStyle btnTools" data-wow-delay=".3s"
+					href="kit.html" role="button">I Want It!</a>
+			</section>
+		</div>
+
+		<section id="kit" class="kitStyle">
+			<h3 class="kitBox wow bounceInLeft" data-wow-duration="1.5s">Kit <span class="titleBorderStyle">box</span>
+			</h3>
+			<p class="kitBoxSubt">Our boxes include everything you need to be an expert bartender, tools,
+				ingredients and recipes.
+				Choose the one you like and let the show begin!</p>
+		</section>
+		<section class="kbox">
+			<img class="kitBoxImg" src="/img/new_york_kit.png" alt="New York Kit">
+			<div class="marginBox">
+				<h3 class="kitBoxTitle"><span class="titleBorderStyleBlue">01.</span> New York Kit</h3>
+				<p class="kitBoxTxt">Do you want to feel like you are in the city that never sleeps? With our recipes
+					and drinks you'll
+					feel like you're in a bar on Fifth Avenue. </p>
+				<p class="kitBoxTxt">This kit includes all the ingredients for 3 different drinks for two people, two
+					exclusive glasses to
+					enhance the aroma and color of the drinks, a metal jigger and a long spoon.</p>
+				<a class="btn btn-outline-dark wow bounceIn btnStyle shadowStyle  btnKit" data-wow-delay=".4s"
+					href="kit.html" role="button">I Want It!</a>
+			</div>
+		</section>
+
+		<section class="kbox">
+			<div class="">
+				<h3 class="kitBoxTitle"><span class="titleBorderStyleBlue">02.</span> London Kit</h3>
+				<p class="kitBoxTxt">If you feel like sitting in front of the River Thames and feel the London breeze,
+					this kit is for you! </p>
+				<p class="kitBoxTxt">You'll have the opportunity to create amazing drinks for you and someone else. Here
+					you will find the best ingredients, with the perfect tools and the right recipes to transport you to
+					a pub surrounded by British accents.</p>
+				<a class="btn btn-outline-dark wow bounceIn btnStyle shadowStyle  btnKit" data-wow-delay=".4s"
+					href="kit.html" role="button">I Want It!</a>
+			</div>
+			<img class="kitBoxImg marginBox" src="/img/london_kit.png" alt="New York Kit">
+
+		</section>
+
+		<section class="kbox">
+			<img class="kitBoxImg" src="/img/madrid_kit.png" alt="Madrid Kit">
+			<div class="marginBox">
+				<h3 class="kitBoxTitle"><span class="titleBorderStyleBlue">03.</span> Madrid Kit</h3>
+				<p class="kitBoxTxt">If you want to walk the streets of Madrid, this kit is the one for you. You will
+					feel like with a drink you are immediately transported to the Plaza del Sol. </p>
+				<p class="kitBoxTxt">Do you want to create cocktails with the best ingredients and tools? Then don't
+					wait any longer to share this box with someone else, here you have everything that you need. </p>
+				<a class="btn btn-outline-dark wow bounceIn btnStyle shadowStyle  btnKit" data-wow-delay=".4s"
+					href="kit.html" role="button">I Want It!</a>
+			</div>
+		</section>
+
+		<section class="kbox">
+			<div class="">
+				<h3 class="kitBoxTitle"><span class="titleBorderStyleBlue">04.</span> Berlin Kit</h3>
+				<p class="kitBoxTxt">And finally, if you want to experience the madness of a city like Berlin, a drink
+					with the flavor of a cosmopolitan city is for you. </p>
+				<p class="kitBoxTxt">In this box you will find everything you need to make unique combinations and share
+					them with someone else. Top quality ingredients, a step-by-step recipe booklet to make each cocktail
+					and tools to make you feel like a professional. </p>
+				<a class="btn btn-outline-dark wow bounceIn btnStyle shadowStyle btnKit" data-wow-delay=".4s"
+					href="kit.html" role="button">I Want It!</a>
+			</div>
+			<img class="kitBoxImg marginBox" src="/img/berlin_kit.png" alt="New York Kit">
+		</section>
+
+		<div id="about">
+			<h3 class="aboutTitle wow bounceInRight pr" data-wow-duration="2s"><span class="titleBorderStyle">About
+				</span>us</h3>
+			<section class="aboutus pl pr">
+				<section class="aboutCont aboutWeAre pr-5">
+					<h3 class="aboutH3">Our story</h3>
+					<p class="aboutWeAreTx ">We are two Argentinians living in Germany for some time now. We
+						arrived with suitcases, dreams
+						and a lot of uncertainty. We met by chance, and decided to embark on this project together.
+						Drinkit arises from a mix of wanting to do something fun, profitable and that we both like.
+					</p>
+				</section>
+				<section class="aboutCont">
+					<img class="imgClass" src="/img/together_picture.png" alt="">
+				</section>
+				<section class="aboutCont aboutInvite">
+					<p class=" ">We invite you to write us if you are interested in knowing our motivation
+						to carry out this
+						beautiful adventure!
+					</p>
+					<a class="btn btn-outline-dark wow bounceIn btnStyle shadowStyle" data-wow-delay=".4s"
+						href="contact.html" role="button">Take me to It
+					</a>
+				</section>
+			</section>
+		</div>
+
+	</main>
+
+	<footer class="footer footer--bgcolor footer--width shadowFooter">
+		
+			
+			<div>
+				<p class="bold">
+					&copy DrinKit 2021
+				</p>
+				<p>
+					All rights reserved.
+				</p>
+			</div>
+			<div>
+				<p class="bold">
+					Düsseldorf, Deutschland
+				</p>
+				<p>
+					Weseler straße 43 - 40239
+				</p>
+			</div>
+			<div class="imgDirection">
+				<a href="https://www.facebook.com/" target="_blank">
+					<img src="/img/fb_svg.svg" alt="Facebook">
+				</a>
+				<a href="https://www.instagram.com" target="_blank">
+					<img src="/img/igm_svg.svg" alt="instagram">
+				</a>
+				<a href="tel:+49 151 23576948">
+					<img src="/img/tel_b.svg" alt="Phone">
+				</a>
+				<a href="mailto:hello@drinkit.com/">
+					<img src="/img/mail_b.svg" alt="Mail">
+				</a>
+			</div>
 	</footer>
+
 	<!-- script boostrap -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

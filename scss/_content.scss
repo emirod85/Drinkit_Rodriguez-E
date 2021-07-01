@@ -1,23 +1,32 @@
 body {
-    background: $main_bg, $gradient_bg;
-    // background-color: $newBg;
-    // background-image: $main_bg;
-    background-size: 100%;
+    background: $main_bg;
+    background-size: cover;
     background-position: right top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
+
 }
+
+.pl {
+    padding-left: 10vw;
+}
+
+
+.pr {
+    padding-right: 10vw;
+}
+
 .bg_hole {
-    background-color: $newBg;
     background-image: $main_bg;
     background-size: 100%;
     background-position: right top;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 main {
 
-    padding-top: 140px;
+    padding-top: 120px;
     padding-bottom: 30px;
 
     div {
@@ -28,53 +37,556 @@ main {
 h1 {
     display: block;
     font-size: 5em;
+    font-weight: 800;
     font-family: $titleFont;
-    padding-right: 40vw;
+    max-width: 450px;
     line-height: .9em;
-    color: $violet;
-    text-transform: uppercase;
+    color: rgb(0, 0, 0);
 }
 
 #index h2 {
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 450px;
+    margin: 40px 0 40px 0;
+    color: black;
+
+}
+
+.weight2 {
+    font-weight: 600;
+}
+
+.btnStyle {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: .7rem;
+    border: solid 2px;
+    font-weight: 900;
+    color: black;
+}
+
+.shadowStyle {
+    box-shadow: -3px 3px 9px 0px rgba(255, 255, 255, 0.226);
+}
+
+.shadowFooter{
+    box-shadow: 5px -5px 15px 0px rgba(104, 104, 104, 0.315);
+}
+
+.textShadow {
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+.btnStyle:hover {
+    background-color: black;
+    border-color: black;
+}
+
+.infoIndex {
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo {
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+}
+
+.info_txt {
+    display: flex;
+    border-left: solid $primario 4px;
+    box-shadow: -2px 0px 0px 0px rgba(92, 92, 92, 0.13);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    width: 250px;
+    letter-spacing: .01em;
+    font-size: .85em;
+
+}
+
+
+.titleBorderStyle {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+
+.titleBorderStyleBlue {
+    -webkit-text-stroke: 2px $primario;
+    color: transparent;
+    font-size: 1.5em;
+}
+
+.imgHand {
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    right: 0;
+    z-index: -1;
+}
+
+.howItWorks {
+    font-size: 3em;
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    right: 200px;
+    margin-top: 60px;
+    color: black;
+}
+
+.howItWorks::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 0.35rem;
+    left: 70%;
+    bottom: 0;
+    background: $primario;
+    box-shadow: -3px 3px 8px 0px rgba(75, 75, 75, 0.315);
+
+
+
+}
+
+.how {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.howSection {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 40px;
+    border-radius: 15px;
+    height: 450px;
+    justify-content: space-around;
+    box-shadow: -3px 3px 8px 0px rgba(128, 128, 128, 0.13);
+
+}
+
+.howSection1 {
+    margin-top: 80px;
+
+}
+
+.howSection2 {
+    margin-top: 120px;
+}
+
+.howSection3 {
+    margin-top: 160px;
+}
+
+.howImg {}
+
+.howTitle {
     font-size: 2em;
-    text-transform: uppercase;
-    max-width: 600px;
+    font-weight: 800;
+    color: black;
+    margin-top: 35px;
 }
 
-#index main {
-    padding-left: 6vw;
-    padding-right: 6vw;
+.howText {
+    margin-top: 15px;
+    font-size: .9rem;
 }
 
-#index p {
-    color: grey;
-    display: inline-block;
+
+
+.deluxe_kit {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primario;
+    margin: 80px 0 5px 0;
+}
+
+.deluxe_kit_img {
+    display: flex;
+    max-width: 500px;
+    margin: 50px;
+    border-radius: 50px;
+
+}
+
+.deluxeKitTitle {
+    font-size: 3em;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.deluxe_kit_container {
+    padding: 40px;
+    justify-content: space-around;
+}
+.btnTools{
+    text-align: center;
+}
+
+.deluxe_kit_txt {
+    display: flex;
+    max-width: 250px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.marginBox {
+    margin-left: 60px;
+}
+
+.kitStyle {
+padding-top: 80px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.kitBox {
+    font-size: 3em;
+    font-weight: 900;
+    display: block;
+    position: relative;
+    color: black;
+
+
+}
+
+
+
+.kitBox::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 0.35rem;
+    left: -40%;
+    bottom: -10%;
+    background: $primario;
+    box-shadow: -3px 3px 8px 0px rgba(75, 75, 75, 0.315);
+
+}
+
+.kitBoxSubt {
+    width: 520px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.kitBoxTitle {
+    font-weight: 900;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: black;
+
+}
+
+.kitBoxTitleL {
+    font-weight: 900;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: black;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.kitBoxTitleR {
+    font-weight: 900;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: black;
+    text-align: right;
+    margin-top: 50px;
+
+}
+
+.sectionKit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+.kitSpecif {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: black;
+    width: 330px;
+    justify-content: space-between;
+}
+.kitBtn {
+
+}
+
+.kitBoxTxt {
     width: 400px;
-    margin-top: 10px;
+    font-size: 1em;
+    color: black;
+    margin-left: 78px;
+    margin-bottom: 50px;
+
 }
 
-#index section {
-    display: flex-inline;
+.btnKit {
+    margin-left: 78px;
 }
 
+.kitBoxImg {
+    width: 20%;
 
-#contacto label {
+}
+
+.justifyTxt {
+    text-align: justify;
+    display: inline-block;
+}
+
+.aboutus {
+    display: flex;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 50px;
+   
+
+}
+
+.aboutCont {
+    display: flex;
+    flex-grow: 1;
+}
+
+.aboutTitle {
+    font-size: 3em;
+    font-weight: 900;
     display: block;
-    margin: 10px;
-    margin-right: 20px;
+    position: relative;
+    text-align: right;
+    margin-top: 80px;
+    padding-top: 50px;
+    color: black;
+}
+
+.aboutTitle::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 0.35rem;
+    right: 6%;
+    bottom: -5px;
+    background: $primario;
+    box-shadow: -3px 3px 8px 0px rgba(75, 75, 75, 0.315);
+
+}
+
+.aboutH3 {
+    display: block;
+    color: black;
+    font-weight: 900;
+
+}
+
+.aboutWeAre {
+    flex-direction: column;
+}
+
+.aboutWeAreTx {
+    width: 20vw;
+    font-size: 1rem;
+
+}
+
+.aboutInvite {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 300px;
+    padding-top: 330px;
+    align-items: flex-end;
+}
+
+#contact main {
+    padding-top: 110px;
+    padding-bottom: 50px;
 }
 
 
-#contacto input {
+.contactTitle {
+
+    font-size: 3em;
+    font-weight: 900;
     display: block;
-    margin: 10px;
-    margin-right: 20px;
+    position: relative;
+    margin-bottom: 60px;
+    color: black;
 }
 
-#contacto select {
+.contactTitle::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 0.35rem;
+    left: 4%;
+    bottom: -10%;
+    background: $primario;
+    box-shadow: -3px 3px 8px 0px rgba(75, 75, 75, 0.315);
+
+}
+
+.contactSect {
+    display: flex;
+    -ms-flex-direction: column;
+    justify-content: space-around;
+}
+
+#contact input,
+textarea {
     display: block;
-    margin: 10px;
-    margin-right: 20px;
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: .9em;
+    font-family: $mainFont;
+}
+
+textarea {
+    height: 145px;
+}
+
+.formPos {
+    margin-top: -1px;
+}
+
+fieldset {
+    border-radius: 25px;
+
+}
+
+.form__bottom--justify {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btnform {
+    height: 35px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: black;
+}
+
+.btnform:hover {
+    background-color: black;
+    border-color: black;
+}
+
+
+#contact li {
+
+    list-style-type: none;
+
+    max-width: 250px;
+    margin-top: 35px;
+
+    a {
+        text-decoration: none;
+        color: black;
+        text-align: justify;
+
+        p {
+            margin-bottom: 0px;
+
+            margin-top: 0px;
+        }
+
+
+        img {
+            width: 25px;
+            margin-right: 40px;
+        }
+    }
+}
+
+.shadowForm {
+    box-shadow: -2px 2px 5px 2px rgba(92, 92, 92, 0.13);
+}
+
+.titleContact {
+    font-weight: 900;
+    color: black;
+}
+
+.listFlex {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.infoCont {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: black;
+}
+
+.info_cont {
+    display: flex;
+    border-left: solid $primario 4px;
+    box-shadow: -2px 0px 0px 0px rgba(92, 92, 92, 0.13);
+    padding-left: 20px;
+    align-items: center;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    letter-spacing: .01em;
+    font-size: .85em;
+    height: 80px;
+
+}
+
+.icoDist {
+    display: flex;
+    flex-direction: column;
 }
 
 .heightbtm {
@@ -93,13 +605,6 @@ h1 {
     margin-top: 50vh;
 }
 
-legend {
-    padding: 2px 20px 2px 20px;
-    color: white;
-    background-color: grey;
-    border-radius: 25px;
-    font-size: .8em;
-}
 
 fieldset section {
     display: flex;
@@ -111,13 +616,7 @@ form {
     margin-top: 20px;
 }
 
-fieldset {
-    padding: 20px 40px 20px 40px;
-    border: solid 4px grey;
-    border-radius: 25px;
-    background-color: rgba(245, 174, 174, 0.726);
-    /* width: 50% */
-}
+
 
 #comofunciona h1 {
     text-align: center;
@@ -157,7 +656,7 @@ fieldset {
     width: 100%;
     margin: 100px 0px 40px 0px;
     padding: 20px 80px 20px 80px;
-    background-color: $violet;
+
 }
 
 .paddingViewPort {
@@ -212,49 +711,6 @@ fieldset {
 
 }
 
-
-/*animation*/
-
-@mixin pl-pr($paddingL, $paddingR) {
-    padding-left: $paddingL;
-    padding-right: $paddingR;
-}
-
-#kit main {
-    @include pl-pr(6vw, 6vw);
-
-}
-
-#contacto main {
-    @include pl-pr(6vw, 6vw)
-}
-
-#nosotros main {
-    @include pl-pr(6vw, 6vw)
-}
-
-#comofunciona main {
-    background-color: $light;
-}
-
-.main__p--textAlignRight {
-    text-align: right;
-    margin-left: 20vw;
-    margin-right: 6vw;
-    width: 100px;
-}
-
-.main__acordeon--bgcolor {
-    background-color: rgba(245, 174, 174, 0.917);
-    ;
-}
-
-.form__bottom--justify {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px
-}
-
 p.main__p--margin {
     margin-top: 25px
 }
@@ -269,117 +725,104 @@ p.main__p--margin {
 
 
 
-@media only screen and (min-width: 1100px) {
-    div.grid-container {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, auto);
-        grid-gap: 20px;
-    }
+// @media only screen and (min-width: 1100px) {
+//     div.grid-container {
+//         grid-template-columns: repeat(3, 1fr);
+//         grid-template-rows: repeat(5, auto);
+//         grid-gap: 20px;
+//     }
 
-    #index body {
-        background-image: url(../img/Fondo-Drinkit.png);        
-        background-size: 100%;
-        background-position: right top;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+//     #index body {
+//         background-image: url(../img/Fondo-Drinkit.png);
+//         background-size: 100%;
+//         background-position: right top;
+//         background-repeat: no-repeat;
+//         background-attachment: fixed;
+//     }
+// }
+
+
+@media only screen and (min-width: 620px) and (max-width: 937px) {
+.imgHand {
+    // position: absolute;
+    // float: right;
+    // // top: 0;
+    // // margin-top: 100px;
+    // // right: 0;
+    // z-index: -1;
+    // width: 200px;
+}
+.howItWorks {
+    font-size: 3em;
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    right: 200px;
+    margin-top: 0px;}
+
+
+.howSection3 {
+    margin-top: 40px;
+
+}
 }
 
-
-@media only screen and (min-width: 600px) and (max-width: 1099px) {
-    div.grid-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, auto);
-        grid-gap: 20px;
+@media only screen and (min-width: 320px) and (max-width: 619px) {
+    .howSection1 {
+        margin-top: 140px;
+    }
+ 
+    .howSection2 {
+        margin-top: 40px;
+    }
+    .howSection3 {
+        margin-top: 40px;
+    }
     }
 
-    #comofunciona section {
-        display: flex;
-        flex-direction: column;
-    }
+//     body {
+//         background-size: 230%;
+//         background-position: right top;
+//         background-repeat: repeat;
+//         background-attachment: fixed;
+//     }
 
-    body {
-        background-size: 200%;
-        background-position: right top;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+//     #comofunciona section {
+//         display: flex;
+//         flex-direction: column;
+//     }
 
-}
+//     #comofunciona main div {
+//         display: block;
+//         justify-content: center;
+//     }
 
-@media only screen and (min-width: 320px) and (max-width: 599px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, auto);
-        grid-gap: 20px;
-    }
+//     #comofunciona p {
+//         display: flex;
+//     }
 
-    body {
-        background-size: 230%;
-        background-position: right top;
-        background-repeat: repeat;
-        background-attachment: fixed;
-    }
+//     .main__style {
 
-    p {
-        font-size: .8em;
-        background-color: rgba(245, 174, 174, 0.917);
-        padding: 20px;
-        border-radius: 15px
-    }
+//         flex-direction: row;
+//         justify-content: center;
+//         text-align: center;
 
-    #comofunciona section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #comofunciona main div {
-        display: block;
-        justify-content: center;
-    }
-
-    #comofunciona p {
-        display: flex;
-    }
-
-    .main__style {
-
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-
-    }
-
-    .main__p--textAlignRight {
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    h1 {
-        font-size: 10vw;
-        padding-right: 0vw;
-        line-height: 1em;
-        color: rgb(107, 199, 189);
-        text-transform: uppercase;
-    }
+//     }
 
 
-    #index h2 {
-        font-size: 1.5em;
-        text-transform: uppercase;
-        
-    }
-}
+//     h1 {
+//         font-size: 10vw;
+//         padding-right: 0vw;
+//         line-height: 1em;
+//         color: rgb(107, 199, 189);
+//         text-transform: uppercase;
+//     }
 
-div a img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
-#kit main section {
-    margin-bottom: 35px
-}
+//     #index h2 {
+//         font-size: 1.5em;
+//         text-transform: uppercase;
+
+//     }
+// }
+
