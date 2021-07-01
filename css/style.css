@@ -694,7 +694,7 @@ form {
     right: 200px;
     margin-top: -60px; }
   .howSection1 {
-    margin-top: 40px; }
+    margin-top: 90px; }
   .howSection2 {
     margin-top: 40px; }
   .howSection3 {
@@ -760,6 +760,13 @@ form {
   .kitBoxImg {
     display: flex;
     width: 35vw; }
+  .kitBoxSubt {
+    width: 400px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px; }
   .aboutH3 {
     display: block;
     color: black;
