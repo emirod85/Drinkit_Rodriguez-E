@@ -828,7 +828,9 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  #about {
+    width: 40vw; } }
 
 .footer--width {
   background-color: black;
