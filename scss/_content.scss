@@ -796,7 +796,7 @@ form {
 
     .kbox {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 80px;
@@ -805,7 +805,7 @@ form {
 
     }
 
-    
+    .kbox1 {flex-direction: column-reverse;}
 
     .howItWorks {
         font-size: 3em;
@@ -909,7 +909,10 @@ form {
         margin-left: 2vw;
 
     }
+.marginBox1{margin: 0;
+    padding: 0;
 
+}
     .marginR {
         margin-right: 2vw;
     }
@@ -917,6 +920,7 @@ form {
     .kitBoxImg {
         display: flex;
         width: 35vw;
+        margin-bottom: 40px;
 
     }
 

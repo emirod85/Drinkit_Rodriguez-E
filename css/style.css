@@ -686,12 +686,14 @@ form {
     margin-bottom: 40px; }
   .kbox {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 80px;
     margin-left: 40vw;
     margin-right: 40vw; }
+  .kbox1 {
+    flex-direction: column-reverse; }
   .howItWorks {
     font-size: 3em;
     font-weight: 900;
@@ -761,11 +763,15 @@ form {
     align-items: center; }
   .marginL {
     margin-left: 2vw; }
+  .marginBox1 {
+    margin: 0;
+    padding: 0; }
   .marginR {
     margin-right: 2vw; }
   .kitBoxImg {
     display: flex;
-    width: 35vw; }
+    width: 35vw;
+    margin-bottom: 40px; }
   .kitBoxSubt {
     width: 80vw;
     font-weight: 300;
